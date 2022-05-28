@@ -7,4 +7,4 @@ Each problem contains
 * Algorithm
 * Code in Python
 * Comparation about time and space that LeetCode shows after the submission.
-* A possible alternative answer that improves the performance in terms of BigO data. 
+* A possible alternative answer that improves the performance in terms of BigO notation
