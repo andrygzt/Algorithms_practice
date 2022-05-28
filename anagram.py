@@ -92,6 +92,8 @@ print(sol.isAnagram(s,t))
 Mi first attempt to solution gives:
 Runtime: 51 ms
 Memory Usage: 14.4 MB
+time complexity O(n)
+space complexity O(n)
 Because of the use of .keys() built in function inside of the for loop.
 See details here ---> https://leetcode.com/submissions/detail/708142433/
 In this time it seems that the use of build in .items() makes this solution more efficient.
