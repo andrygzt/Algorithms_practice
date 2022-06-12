@@ -45,6 +45,16 @@ if no one is equals and counter>4 return None
 else if elem in [1][1]==[2][2]==[3][3] of [1][3]==[2][2]=[3][1]
 return the element is in those positions.
 
+
+'''
+'''
+Board looks like
+
+[
+    [0,0  0,1  0,2],
+    [1,0  1,1  1,2],
+    [2,0  2,1  2,2]
+]
 '''
 
 
@@ -56,7 +66,7 @@ board =[
 ]
 
 
-
+#horizontal
 for row in range(len(board)):
     current = board[row][0]
     for col in range(1, len(board)):
@@ -67,7 +77,7 @@ for row in range(len(board)):
                 break
         else:
             break
-
+#vertical
 for col in range(len(board)):
     current = board[0][col]
     for row in range(1, len(board)):
@@ -79,6 +89,7 @@ for col in range(len(board)):
         else:
             break
         
+#diag incrementing        
 diag=board[0][0]
 for coor in range(1, len(board)):
     if board[coor][coor]==diag and board[coor][coor]!='':
@@ -89,6 +100,8 @@ for coor in range(1, len(board)):
     else:
         break
 
+
+#diag decrementing
 diag=board[len(board)-1][0]
 forw=1
 for coor in range(len(board)-2, -1, -1):
@@ -99,7 +112,7 @@ for coor in range(len(board)-2, -1, -1):
             break
     else:
         break
-    forw+=1
+    forw+=1 
 
 for rows in board:
     for empty in rows:
