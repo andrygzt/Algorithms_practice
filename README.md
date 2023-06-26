@@ -1,4 +1,4 @@
-# study-notes
+
 Problem solving exercises in preparation for interviews.
 This repository contains problems set for precticing purposes for interview sessions.
 Each problem contains
