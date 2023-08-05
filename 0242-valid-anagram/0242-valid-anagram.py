@@ -3,20 +3,29 @@ class Solution:
         if len(s)!=len(t):
             return False
         
-        def helper(a):
-            freq= {}
-            for elem in a:
-                if elem in freq:
-                    freq[elem]+=1
-                else:
-                    freq[elem]=1
-            return freq
+
+        freq= {}
+        for elem in s:
+            if elem in freq:
+                freq[elem]+=1
+            else:
+                freq[elem]=1
+    
+
+        for elem in t:
+            if elem not in freq:
+                freq[elem] =1
+            else:
+                freq[elem] -=1
+                if freq[elem]==0:
+                    del freq[elem]
+    
         
-        
-        if helper(s) == helper(t):
-            return True
-        else:
+        print(freq)
+        if freq != {}:
             return False
+        else:
+            return True
                     
             
             
