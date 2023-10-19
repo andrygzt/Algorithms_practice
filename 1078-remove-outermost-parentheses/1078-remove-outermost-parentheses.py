@@ -3,12 +3,13 @@ class Solution:
         if len(s)%2 != 0:
             return ""
 
-        popen, result = 0, []
-        for char  in s:
-            if char ==')':
+        popen, result = 0, ""
+        for char in s:
+            if char == ')':
                 popen -= 1
-            if popen>0:
-                result.append(char)
-            if char =='(':
+            if popen > 0:
+                result += char
+            if char == '(':
                 popen += 1
-        return ''.join(result)
+        return result
+
